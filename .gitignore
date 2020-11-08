@@ -1,5 +1,7 @@
 TODO.txt
 **/node_modules
-# Todo app solution
+# Intermediate workshop: Todo app solution
 intermediate/workshop/todo-app/src/TodoApp-solution.js
 intermediate/workshop/todo-app/src/components/TodoItem-solution.js
+# Reat Patterns workshop solutions
+react-patterns/workshop/react-patterns/src/**/solution/*
