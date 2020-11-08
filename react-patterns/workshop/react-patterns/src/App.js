@@ -4,13 +4,13 @@ import { Layout, Typography } from "antd";
 import Header from "./components/Header";
 import Sidebar from "./components/Sidebar";
 // Demos
-// PCC
+// SSC
 import {
   CharactersList,
   CharactersListContainer,
   CharactersListContainer2,
   UserCard,
-} from "./examples/PCC/";
+} from "./examples/SSC/";
 
 const { Content } = Layout;
 const { Title } = Typography;
@@ -24,11 +24,11 @@ const App = () => {
           <Sidebar />
           <Content className="inner-content">
             <Switch>
-              {/* PCC */}
-              <Route exact path="/ppc/1" component={CharactersList} />
-              <Route exact path="/ppc/2" component={CharactersListContainer} />
-              <Route exact path="/ppc/3" component={CharactersListContainer2} />
-              <Route exact path="/ppc/exercise">
+              {/* SSC */}
+              <Route exact path="/ssc/1" component={CharactersList} />
+              <Route exact path="/ssc/2" component={CharactersListContainer} />
+              <Route exact path="/ssc/3" component={CharactersListContainer2} />
+              <Route exact path="/ssc/exercise">
                 <UserCard title="My user card!" />
               </Route>
 
