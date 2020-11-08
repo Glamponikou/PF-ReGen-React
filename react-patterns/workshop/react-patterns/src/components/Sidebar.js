@@ -23,6 +23,23 @@ const Sidebar = () => (
           PCC exercise <Link to="/ssc/exercise" />
         </Item>
       </SubMenu>
+      <SubMenu icon={<DeploymentUnitOutlined />} title="HoC">
+        <Item>
+          01: Starting Point <Link to="/hoc/1" />
+        </Item>
+        <Item>
+          02: withData HoC <Link to="/hoc/2" />
+        </Item>
+        <Item>
+          03: Configurable withData HoC <Link to="/hoc/3" />
+        </Item>
+        <Item>
+          04: HοC composition <Link to="/hoc/4" />
+        </Item>
+        <Item>
+          HoC exercise <Link to="/hoc/exercise" />
+        </Item>
+      </SubMenu>
     </Menu>
   </Sider>
 );
