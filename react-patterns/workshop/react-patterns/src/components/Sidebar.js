@@ -40,6 +40,26 @@ const Sidebar = () => (
           HoC exercise <Link to="/hoc/exercise" />
         </Item>
       </SubMenu>
+      <SubMenu icon={<DeploymentUnitOutlined />} title="Render props">
+        <Item>
+          01: Starting Point <Link to="/rp/1" />
+        </Item>
+        <Item>
+          02: Render prop <Link to="/rp/2" />
+        </Item>
+        <Item>
+          03: Render prop with other props <Link to="/rp/3" />
+        </Item>
+        <Item>
+          04: Render prop with multiple arguments <Link to="/rp/4" />
+        </Item>
+        <Item>
+          05: Children render prop <Link to="/rp/5" />
+        </Item>
+        <Item>
+          RP exercise <Link to="/rp/exercise" />
+        </Item>
+      </SubMenu>
     </Menu>
   </Sider>
 );

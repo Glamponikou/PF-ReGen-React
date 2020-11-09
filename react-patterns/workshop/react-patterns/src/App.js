@@ -19,6 +19,15 @@ import {
   CharactersListHoC4,
   HoCUserCard,
 } from "./examples/HoC/";
+// RP
+import {
+  CharactersListRP,
+  CharactersListRP2,
+  CharactersListRP3,
+  CharactersListRP4,
+  CharactersListRP5,
+  RPUserCard,
+} from "./examples/RP";
 
 const { Content } = Layout;
 const { Title } = Typography;
@@ -46,6 +55,15 @@ const App = () => {
               <Route exact path="/hoc/4" component={CharactersListHoC4} />
               <Route exact path="/hoc/exercise">
                 <HoCUserCard title="My user card!" />
+              </Route>
+              {/* RP */}
+              <Route exact path="/rp/1" component={CharactersListRP} />
+              <Route exact path="/rp/2" component={CharactersListRP2} />
+              <Route exact path="/rp/3" component={CharactersListRP3} />
+              <Route exact path="/rp/4" component={CharactersListRP4} />
+              <Route exact path="/rp/5" component={CharactersListRP5} />
+              <Route exact path="/rp/exercise">
+                <RPUserCard title="My user card!" />
               </Route>
 
               <Route exact path="/">
