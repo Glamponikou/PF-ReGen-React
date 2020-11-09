@@ -60,6 +60,23 @@ const Sidebar = () => (
           RP exercise <Link to="/rp/exercise" />
         </Item>
       </SubMenu>
+      <SubMenu icon={<DeploymentUnitOutlined />} title="Custom hooks">
+        <Item>
+          01: Starting Point <Link to="/ch/1" />
+        </Item>
+        <Item>
+          02: Custom hook <Link to="/ch/2" />
+        </Item>
+        <Item>
+          03: Pass parameters to custom hook <Link to="/ch/3" />
+        </Item>
+        <Item>
+          04: Return more complex data <Link to="/ch/4" />
+        </Item>
+        <Item>
+          CH exercise <Link to="/ch/exercise" />
+        </Item>
+      </SubMenu>
     </Menu>
   </Sider>
 );

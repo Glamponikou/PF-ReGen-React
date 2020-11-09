@@ -28,6 +28,14 @@ import {
   CharactersListRP5,
   RPUserCard,
 } from "./examples/RP";
+// Custom hooks
+import {
+  CharactersListCH,
+  CharactersListCH2,
+  CharactersListCH3,
+  CharactersListCH4,
+  CHUserCard,
+} from "./examples/hooks";
 
 const { Content } = Layout;
 const { Title } = Typography;
@@ -64,6 +72,14 @@ const App = () => {
               <Route exact path="/rp/5" component={CharactersListRP5} />
               <Route exact path="/rp/exercise">
                 <RPUserCard title="My user card!" />
+              </Route>
+              {/* Custom hooks */}
+              <Route exact path="/ch/1" component={CharactersListCH} />
+              <Route exact path="/ch/2" component={CharactersListCH2} />
+              <Route exact path="/ch/3" component={CharactersListCH3} />
+              <Route exact path="/ch/4" component={CharactersListCH4} />
+              <Route exact path="/ch/exercise">
+                <CHUserCard title="My user card!" />
               </Route>
 
               <Route exact path="/">
