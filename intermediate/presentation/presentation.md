@@ -55,25 +55,7 @@ Files and directory structure (demo).
 
 # Hooks
 
-Let you put state and access to lifecycle methods to your functional components!
-
----
-
-# Hooks
-
-- reuse stateful logic between components
-- simplify components (easy to understand)
-- share logic between different components and lifecycle methods
-- easier and more flexible pattern from render props and higher-order components
-
----
-
-# Rules of Hooks
-
-- only call Hooks from React function components
-- only call Hooks at the top level
-- don’t call hooks inside loops, conditions, or nested functions
-- custom Hooks start with useSomething PascalCase function
+Let you put state and logic to your functional components!
 
 ---
 

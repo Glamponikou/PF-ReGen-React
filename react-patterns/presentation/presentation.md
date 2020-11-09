@@ -15,7 +15,7 @@ theme: uncover
 
 All the content can be found [here](https://github.com/codehub-learn/PF-ReGen-React).
 
-- stateful and stateless Components
+- stateful and stateless components
 - higher-order components (HoC)
 - render props
 - custom hooks
@@ -45,8 +45,8 @@ Feel free to interrupt me for:
 # Stateful components
 
 - are concerned with how things work
-- provide the data and behavior to presentational or other container components
-- call actions and provide these as callbacks to the presentational components
+- provide the data and behavior to stateless or other stateful components
+- call actions and provide these as callbacks to the stateless components
 - connect with stores (redux, mobx, etc.)
 
 ---
@@ -87,7 +87,6 @@ A higher-order component (HoC) is an advanced technique in React for reusing com
 # Pure functions (functional programming)
 
 - given the same input, will always return the same output
-
 - produce no side effects (ex. API calls, updating DOM, subscribing to event listeners - anything where you want an "imperative" action to happen)
 
 ---
@@ -246,11 +245,11 @@ Examples.
 
 (./src/examples/HoC/exercise/UserCard.js)
 
-- create a HoC "withUser()"
-- keep the same functionality
-- the HοC will fetch the user data and pass them to the "enhanced" component as props
-- make the "Card" component stateless
-- Use it as: <Card title="My card" />
+1. create a HoC "withUser()"
+2. keep the same functionality
+3. the HοC will fetch the user data and pass them to the "enhanced" component as props
+4. make the "UserCard" component stateless
+5. Use it as: <UserCard title="My card" />
 
 ---
 
@@ -262,10 +261,108 @@ Examples.
 
 ---
 
+# Render props
+
+a “render prop” is simply a prop that takes a function which returns elements that will be used in render()
+
+---
+
+# Render props
+
+solves the problems a HoC solves
+
+---
+
+# Render props
+
+```js
+const Component = (props) => props.renderProp();
+// or
+const Component = (props) => props.children();
+```
+
+---
+
+# Render props
+
+Examples.
+
+---
+
+# Render props exercise
+
+(./src/examples/RP/exercise/UserCard.js)
+
+1. create a "User" component that will provide the user data using a render prop
+2. keep the same functionality
+3. make the UserCard component stateless and use the User component to render the data
+
+---
+
+# Render props > HoCs
+
+- simpler (not ES6 classes / hight-order functions)
+- clarity (we know exactly from which component our props came)
+- no need to create a new component
+- no need to rename (avoid naming collisions)
+
+---
+
+# Custom hooks
+
+Custom hooks are a mechanism to reuse stateful logic (such as setting up a subscription and remembering the current value), but every time you use a custom Hook, all state and effects inside of it are fully isolated.
+
+---
+
+# Custom hooks
+
+- reuse stateful logic between components
+- simplify components (easy to understand)
+- share logic between different components and lifecycle methods
+- easier and more flexible pattern from render props and higher-order components
+
+---
+
+# Custom hooks rules
+
+- only call hooks from React function components
+- only call hooks at the top level
+- don’t call hooks inside loops, conditions, or nested functions
+- custom hooks start with useSomething PascalCase function
+
+---
+
+# Custom hooks
+
+Examples.
+
+---
+
+# Custom hooks
+
+(./src/examples/hooks/exercise/UserCard.js)
+
+1. create a custom "useUser" custom hook
+2. keep the same functionality
+3. use the custom hook to get the user data on the UserCard component
+
+---
+
+# Custom hooks > Render props
+
+- better abstraction
+- easier sharing
+- encapsulation
+- cleaner logic for side effects
+
+---
+
 # Recap
 
 - Stateful and stateless components
 - Higher-order components (HoC)
+- Render props
+- Custom hooks
 
 ---
 
