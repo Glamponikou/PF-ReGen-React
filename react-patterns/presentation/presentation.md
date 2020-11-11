@@ -84,7 +84,16 @@ A higher-order component (HoC) is an advanced technique in React for reusing com
 
 ---
 
-# Pure functions (functional programming)
+# FP concepts
+
+- pure functions
+- immutability
+- currying
+- higher-order functions
+
+---
+
+# Pure functions
 
 - given the same input, will always return the same output
 - produce no side effects (ex. API calls, updating DOM, subscribing to event listeners - anything where you want an "imperative" action to happen)
@@ -97,6 +106,7 @@ A higher-order component (HoC) is an advanced technique in React for reusing com
 function add(num1, num2) {
   return num1 + num2;
 }
+
 const add = (num1, num2) => num1 + num2;
 ```
 
@@ -120,7 +130,16 @@ function add(num1, num2) {
 
 ---
 
-# Currying (functional programming)
+# Immutability
+
+- once it's created it can’t be changed
+- it will have the same properties and values forever
+- makes our objects/state/values more predictable
+- less bugs
+
+---
+
+# Currying
 
 Is the process of transforming a function that takes multiple arguments into a series of functions that take one argument at a time.
 
@@ -165,7 +184,7 @@ const result3 = addTwo(5); // 7
 
 ---
 
-# Higher-order function (functional programming)
+# Higher-order function
 
 A higher order function is a function that either takes one or more functions as arguments or returns a function as its result or both.
 
