@@ -5,3 +5,5 @@ intermediate/workshop/todo-app/src/TodoApp-solution.js
 intermediate/workshop/todo-app/src/components/TodoItem-solution.js
 # Reat Patterns workshop solutions
 react-patterns/workshop/react-patterns/src/**/solution/*
+# redux
+redux/workshop/src/examples/solution1/*

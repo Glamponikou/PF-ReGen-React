@@ -22,6 +22,9 @@ const Sidebar = () => (
         <Item>
           04 <Link to="/redux/4" />
         </Item>
+        <Item>
+          exercise 01 <Link to="/exercise/1" />
+        </Item>
       </SubMenu>
     </Menu>
   </Sider>
