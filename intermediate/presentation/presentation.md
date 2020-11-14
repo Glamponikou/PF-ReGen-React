@@ -59,6 +59,15 @@ Let you put state and logic to your functional components!
 
 ---
 
+# Hook rules
+
+- only call hooks from React function components
+- only call hooks at the top level
+- don’t call hooks inside loops, conditions, or nested functions
+- custom hooks start with useSomething PascalCase function
+
+---
+
 # React Hooks
 
 - useState
@@ -98,6 +107,34 @@ Let you put state and logic to your functional components!
 - getDerivedStateFromProps: schedule an update while rendering instead
 - shouldComponentUpdate: React.memo
 - render: this is the function component body itself
+
+---
+
+# useState
+
+```jsx
+const [state, steState] = useState("my value");
+```
+
+---
+
+# useEffect
+
+```jsx
+// accepts two arguments: a function, and dependency array
+useEffect(() => {
+  // do stuff
+  return () => {}; // run this return function when component unmounts
+}, []); // dependency array
+```
+
+---
+
+# useReducer
+
+```jsx
+const [state, dispatch] = useReducer(reducer, initialState);
+```
 
 ---
 
