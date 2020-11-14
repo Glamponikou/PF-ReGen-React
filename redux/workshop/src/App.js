@@ -6,6 +6,7 @@ import Sidebar from "./components/Sidebar";
 // Demos
 import Redux04 from "./examples/04/index";
 import Exercise01 from "./examples/exercise1/index";
+import Redux05 from "./examples/05/index";
 
 const { Content } = Layout;
 const { Title } = Typography;
@@ -21,6 +22,7 @@ const App = () => {
             <Switch>
               <Route exact path="/redux/4" component={Redux04} />
               <Route exact path="/exercise/1" component={Exercise01} />
+              <Route exact path="/redux/5" component={Redux05} />
 
               <Route exact path="/">
                 <Title>Demos</Title>
