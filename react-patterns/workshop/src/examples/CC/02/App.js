@@ -16,7 +16,7 @@ const App = () => {
 
   return (
     <div>
-      <Title>Compound Components 02: Component composition</Title>
+      <Title>CC 02: Component composition</Title>
       <hr />
       <Tabs>
         <TabHeader>

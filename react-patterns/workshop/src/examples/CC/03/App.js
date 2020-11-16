@@ -6,7 +6,7 @@ const { Title } = Typography;
 
 const App = () => (
   <div>
-    <Title>Compound Components 03: Compound components</Title>
+    <Title>CC 03: Compound components</Title>
     <hr />
     <Tabs>
       <Tabs.TabPane title="Tab 1">

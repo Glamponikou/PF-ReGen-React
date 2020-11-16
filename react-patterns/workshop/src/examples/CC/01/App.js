@@ -36,7 +36,7 @@ const tabsEntries = [
 
 const App = () => (
   <div>
-    <Title>Compound Components 01: Starting point</Title>
+    <Title>CC 01: Starting point</Title>
     <hr />
     <Tabs tabs={tabsEntries} />
   </div>

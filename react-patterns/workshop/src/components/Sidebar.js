@@ -87,6 +87,9 @@ const Sidebar = () => (
         <Item>
           03: Compound components <Link to="/cc/3" />
         </Item>
+        <Item>
+          04: Compound components <Link to="/cc/4" />
+        </Item>
       </SubMenu>
     </Menu>
   </Sider>

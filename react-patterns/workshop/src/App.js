@@ -37,7 +37,7 @@ import {
   CHUserCard,
 } from "./examples/hooks";
 // Compound Components
-import { CCApp1, CCApp2, CCApp3 } from "./examples/CC";
+import { CCApp1, CCApp2, CCApp3, CCApp4 } from "./examples/CC";
 
 const { Content } = Layout;
 const { Title } = Typography;
@@ -87,6 +87,7 @@ const App = () => {
               <Route exact path="/cc/1" component={CCApp1} />
               <Route exact path="/cc/2" component={CCApp2} />
               <Route exact path="/cc/3" component={CCApp3} />
+              <Route exact path="/cc/4" component={CCApp4} />
 
               <Route exact path="/">
                 <Title>Demos</Title>
