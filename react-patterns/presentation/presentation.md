@@ -318,6 +318,12 @@ Examples.
 
 ---
 
+# Render props considerations
+
+- callback hell
+
+---
+
 # Render props > HoCs
 
 - simpler (not ES6 classes / hight-order functions)
@@ -376,12 +382,61 @@ Examples.
 
 ---
 
+# Compound components
+
+Compound components is a pattern where components are used together such that they share an implicit state that lets them communicate with each other in the background. A compound component is composed of a subset of child components that all work in tandem to produce some functionality
+
+---
+
+# Compound components
+
+> Think of compound components like the <select> and <option> elements in HTML. Apart they don’t do too much, but together they allow you to create the complete experience. — [Kent C. Dodds](https://kentcdodds.com/)
+
+---
+
+# HTML elements
+
+```html
+<select id="programming-languages">
+  <option value="javascript">JavaScript</option>
+  <option value="typescript">TypeScript</option>
+  <option value="rust">Rust</option>
+  <option value="go" selected>Go</option>
+</select>
+```
+
+---
+
+# Compound components
+
+- [React.Children.map](https://reactjs.org/docs/react-api.html#reactchildrenmap)
+- [React.cloneElement()](https://reactjs.org/docs/react-api.html#cloneelement)
+- [Context API ](https://reactjs.org/docs/context.html)
+
+---
+
+# Compound components benefits
+
+- flexible
+- cleaner API
+- customizable
+- reusable
+
+---
+
+# Compound components
+
+Examples.
+
+---
+
 # Recap
 
 - Stateful and stateless components
 - Higher-order components (HoC)
 - Render props
 - Custom hooks
+- Compound components
 
 ---
 
