@@ -77,6 +77,17 @@ const Sidebar = () => (
           CH exercise <Link to="/ch/exercise" />
         </Item>
       </SubMenu>
+      <SubMenu icon={<DeploymentUnitOutlined />} title="Compound Components">
+        <Item>
+          01: Starting point <Link to="/cc/1" />
+        </Item>
+        <Item>
+          02: Component composition <Link to="/cc/2" />
+        </Item>
+        <Item>
+          03: Compound components <Link to="/cc/3" />
+        </Item>
+      </SubMenu>
     </Menu>
   </Sider>
 );
