@@ -1,0 +1,9 @@
+1. Write a JavaScript program to find which 1st January is being a Sunday between 2021 and 2100.
+2. Write a JavaScript function to check whether a string is blank or not.
+3. Write a JavaScript program to check two given numbers and return true if one of the number is 50 or if their sum is 50.
+4. Write a JavaScript program to convert temperatures to and from celsius, fahrenheit.
+5. Write a JavaScript program to check two given non-negative integers that whether one of the number (not both) is multiple of 7 or 11.
+6. Write a JavaScript function that accepts a string as a parameter and counts the number of vowels within the string.
+7. Write a JavaScript program to check whether all elements in a given array are equal or not.
+8. Write a JavaScript function that accept a list of country names as input and returns the longest country name as output.
+9. Write a method that reverts input array.
